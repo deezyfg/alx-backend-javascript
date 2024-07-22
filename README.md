@@ -67,6 +67,7 @@ Upon completing the projects in this repository, you will be able to:
 ![Vim](https://img.shields.io/badge/≡-Vim-019733?logo=Vim&style=flat-square&logoColor=019733&labelColor=282828)
 [![Emacs](https://img.shields.io/badge/≡-Emacs-7F5AB6?logo=GNU-Emacs&style=flat-square&labelColor=282828)](https://www.gnu.org/software/emacs/)
 ![VS_Code](https://img.shields.io/badge/≡-VS_Code-007ACC?logo=visual-studio-code&style=flat-square&logoColor=007ACC&labelColor=282828)
+![Pop!_OS](https://img.shields.io/badge/≡-Pop!_OS-48B9C7?logo=Pop_OS&style=flat-square&labelColor=282828)
 ![JSON](https://img.shields.io/badge/≡-JSON-000000?logo=JSON&style=flat-square&labelColor=282828)
 [![ESLint](https://img.shields.io/badge/≡-ESLint-4B32C3?logo=ESLint&style=flat-square&labelColor=282828&logoColor=4B32C3)](https://eslint.org/)
 ![GitHub](https://img.shields.io/badge/≡-GitHub-181717?logo=GitHub&style=flat-square&labelColor=282828)
