@@ -1,11 +1,11 @@
 # 0x00. ES6 Basics
-This project focuses on understanding and utilizing the new features introduced in ECMAScript 6 (ES6), also known as ECMAScript 2015 to write cleaner and more efficient JavaScript code. It covers various concepts and provides hands-on tasks to reinforce learning.
+This project focuses on understanding and utilizing the new features introduced in **ECMAScript 6 (ES6)**, also known as **ECMAScript 2015** to write cleaner and more efficient JavaScript code. It covers various concepts and provides hands-on tasks to reinforce learning.
 
 ## Concepts
 For this project, we expect you to look at these concepts:
 
 <details>
-<summary>JavaScript programming</summary><br>
+<summary><b>JavaScript programming</summary></b><br>
 
 **Reading:**
 
@@ -112,9 +112,9 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * All your files should end with a new line
 * A `README.md` file, at the root of the folder of the project, is mandatory
 * Your code should use the `js` extension
-Your code will be tested using the [Jest Testing Framework](https://jestjs.io/)
-Your code will be analyzed using the linter [ESLint](https://eslint.org/) along with specific rules that we’ll provide
-All of your functions must be exported
+* Your code will be tested using the [Jest Testing Framework](https://jestjs.io/)
+* Your code will be analyzed using the linter [ESLint](https://eslint.org/) along with specific rules that we’ll provide
+* All of your functions must be exported
 
 ## Setup
 ### Install NodeJS 12.11.x
@@ -154,7 +154,7 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
 
 ### Mandatory Tasks:
 
-#### + [x] [0. Const or let?](0-constants.js)
+#### [0. Const or let?](0-constants.js)
   + For the code below, make the following modifications:
      + function `taskFirst` to instantiate variables using `const`
      + function `taskNext` to instantiate variables using `let`
@@ -189,7 +189,7 @@ I prefer const when I can. But sometimes let is okay
 bob@dylan:~$ 
 ```
   
-#### + [x] [1. Block Scope](1-block-scoped.js)
+#### [1. Block Scope](1-block-scoped.js)
 
 Given what you’ve read about `var` and hoisting, modify the variables inside the function `taskBlock` so that the variables aren’t overwritten inside the conditional block.
 ```js
@@ -220,7 +220,7 @@ bob@dylan:~$ npm run dev 1-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [2. Arrow functions](2-arrow.js)
+#### [2. Arrow functions](2-arrow.js)
 Rewrite the following standard function to use ES6’s arrow syntax of the function `add` (it will be an anonymous function after)
 ```js
 export default function getNeighborhoodsList() {
@@ -248,7 +248,7 @@ bob@dylan:~$ npm run dev 2-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [3. Parameter defaults](3-default-parameter.js)
+#### [3. Parameter defaults](3-default-parameter.js)
 Condense the internals of the following function to 1 line - without changing the name of each function/variable.
 
 *Hint:* The key here to define default parameter values for the function parameters.
@@ -281,7 +281,7 @@ bob@dylan:~$ npm run dev 3-main.js
 bob@dylan:~$
 ```
 
-#### + [x] [4. Rest parameter syntax for functions](4-rest-parameter.js)
+#### [4. Rest parameter syntax for functions](4-rest-parameter.js)
 Modify the following function to return the number of arguments passed to it using the rest parameter syntax
 ```js
 export default function returnHowManyArguments() {
@@ -310,7 +310,7 @@ bob@dylan:~$ npm run dev 4-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [5. The wonders of spread syntax](5-spread-operator.js)
+#### [5. The wonders of spread syntax](5-spread-operator.js)
 Using spread syntax, concatenate 2 arrays and each character of a string by modifying the function below. Your function body should be one line long.
 ```js
 export default function concatArrays(array1, array2, string) {
@@ -334,7 +334,7 @@ bob@dylan:~$ npm run dev 5-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [6. Take advantage of template literals](6-string-interpolation.js)
+#### [6. Take advantage of template literals](6-string-interpolation.js)
 Rewrite the return statement to use a template literal so you can the substitute the variables you’ve defined.
 ```js
 export default function getSanFranciscoDescription() {
@@ -364,7 +364,7 @@ As of 2017, it was the seventh-highest income county in the United States, with 
 bob@dylan:~$
 ```
 
-#### + [x] [7. Object property value shorthand syntax](7-getBudgetObject.js)
+#### [7. Object property value shorthand syntax](7-getBudgetObject.js)
 Notice how the keys and the variable names are the same?
 
 Modify the following function’s `budget` object to simply use the keyname instead.
@@ -393,7 +393,7 @@ bob@dylan:~$ npm run dev 7-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [8. No need to create empty objects before adding in properties](8-getBudgetCurrentYear.js)
+#### [8. No need to create empty objects before adding in properties](8-getBudgetCurrentYear.js)
 Rewrite the `getBudgetForCurrentYear` function to use ES6 computed property names on the `budget` object
 ```js
 function getCurrentYear() {
@@ -425,7 +425,7 @@ bob@dylan:~$ npm run dev 8-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [9. ES6 method properties](9-getFullBudget.js)
+#### [9. ES6 method properties](9-getFullBudget.js)
 Rewrite `getFullBudgetObject` to use ES6 method properties in the `fullBudget` object
 
 ```js
@@ -464,7 +464,7 @@ $20
 bob@dylan:~$
 ```
 
-#### + [x] [10. For...of Loops](10-loops.js)
+#### [10. For...of Loops](10-loops.js)
 Rewrite the function `appendToEachArrayValue` to use ES6’s `for...of` operator. And don’t forget that `var` is not ES6-friendly.
 
 ```js
@@ -491,7 +491,7 @@ bob@dylan:~$ npm run dev 10-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [11. Iterator](11-createEmployeesObject.js)
+#### [11. Iterator](11-createEmployeesObject.js)
   + Write a function named `createEmployeesObject` that will receive two arguments:
      + `departmentName` (String)
      +`employees` (Array of Strings)
@@ -523,7 +523,7 @@ bob@dylan:~$ npm run dev 11-main.js
 bob@dylan:~$
 ```
   
-#### + [x] [12. Let's create a report object](12-createReportObject.js)
+#### [12. Let's create a report object](12-createReportObject.js)
 Write a function named `createReportObject` whose parameter, `employeesList`, is the return value of the previous function `createEmployeesObject`.
 ```js
 export default function createReportObject(employeesList) {
@@ -571,7 +571,7 @@ bob@dylan:~$
 
 ### Advanced Tasks:  
 
-#### + [x] [13. Iterating through report objects](100-createIteratorObject.js)
+#### [13. Iterating through report objects](100-createIteratorObject.js)
 Write a function named `createIteratorObject`, that will take into argument a report Object created with the previous function `createReportObject`.
 
 This function will return an iterator to go through every employee in every department.
@@ -610,7 +610,7 @@ Sylvie
 bob@dylan:~$
 ```
   
-#### + [x] [14. Iterate through object](101-iterateThroughObject.js)
+#### [14. Iterate through object](101-iterateThroughObject.js)
 Finally, write a function named `iterateThroughObject`. The function’s parameter `reportWithIterator` is the return value from `createIteratorObject`.
 ```js
  export default function iterateThroughObject(reportWithIterator) {
@@ -692,7 +692,7 @@ If Node.js is not installed, follow these steps to install it using nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
-2. Close the terminal and open a new one, then run the following commands to install Node.js version 12.11:
+2. Close the terminal and open a new one, then run the following commands to install Node.js version `12.11`:
 ```
 nvm install 12.11
 nvm alias default 12.11
@@ -715,7 +715,7 @@ npm install
 Step 4: Create .gitignore
 After running `ls`, you will see a folder called `node_modules`. To avoid committing this folder to your repository, follow these steps:
 
-1. Navigate out of the [0x00-ES6_basic](0x00-ES6_basic) directory to the [alx-backend-javascript](alx-backend-javascript) repository:
+1. Navigate out of the [0x00-ES6_basic](https://github.com/deezyfg/alx-backend-javascript/tree/master/0x00-ES6_basic) directory to the [alx-backend-javascript](https://github.com/deezyfg/alx-backend-javascript/tree/master) repository:
 ```
 cd ..
 ```
@@ -733,7 +733,7 @@ node_modules/
 4. Save and close the file.
 
 #### Step 5: Working on Tasks
-Now that your environment is set up, you can start working on the tasks for [0x00-ES6_basic](0x00-ES6_basic). For example:
+Now that your environment is set up, you can start working on the tasks for [0x00-ES6_basic](https://github.com/deezyfg/alx-backend-javascript/tree/master/0x00-ES6_basic). For example:
 
 1. Create your JavaScript files (e.g., [0-constants.js](0-constants.js) and [0-main.js](0-main.js))
 
@@ -749,14 +749,15 @@ npm run dev 0-main.js
 ```
 This executes your JavaScript file using Babel, allowing you to use ES6 features.
 
-Remember to run these commands from within the [0x00-ES6_basic](0x00-ES6_basic) directory.
+Remember to run these commands from within the [0x00-ES6_basic](https://github.com/deezyfg/alx-backend-javascript/tree/master/0x00-ES6_basic) directory.
 
 ---
 
 ## Author
 
-- **Peter Opoku-Mensah** (@deezyfg) - 
-  [<img src="https://img.shields.io/badge/Portfolio-20d6fe.svg?&style=plastic"/>](https://peter-opoku-mensah.netlify.app)
-  [<img src="https://img.shields.io/badge/Twitter-1DA1F2.svg?&style=plastic&logo=twitter&logoColor=white"/>](https://twitter.com/coded_issue)
-  [<img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?&style=plastic&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/opokumensahpeter/)
-  [<img src="https://img.shields.io/badge/GitHub-181717.svg?&style=plastic&logo=github&logoColor=white"/>](https://github.com/deezyfg)
+**Peter Opoku-Mensah** ([@deezyfg](https://github.com/deezyfg))
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-20d6fe.svg?&style=plastic)](https://peter-opoku-mensah.netlify.app)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2.svg?&style=plastic&logo=twitter&logoColor=white)](https://twitter.com/coded_issue)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2.svg?&style=plastic&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/opokumensahpeter/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?&style=plastic&logo=github&logoColor=white)](https://github.com/deezyfg)
