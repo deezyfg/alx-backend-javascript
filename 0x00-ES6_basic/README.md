@@ -64,7 +64,7 @@ Screenshot of a passive online linter service `JSON Formatter` to validate a JSO
 
 ![Screenshot.png](https://i.postimg.cc/1tCFL8Rt/Screenshot.png)
 
-## Technologies & Tools:computer:
+## Technologies & Tools :computer:
 
 [![Jest](https://img.shields.io/badge/≡-Jest-C21325?logo=Jest&style=flat-square&labelColor=282828&logoColor=C21325)](https://jestjs.io/)
 [![Git](https://img.shields.io/badge/≡-Git-F05032?logo=git&style=flat-square&labelColor=282828)](https://git-scm.com/)
