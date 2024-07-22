@@ -5,14 +5,13 @@
 > ES6, Promises, Classes, Data Manipulation, TypeScript, Node.js, and Unit Testing
 
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/deezyfg/alx-backend-javascript)
-[![GitHub Repo License: MIT](https://img.shields.io/github/license/deezyfg/alx-backend-javascript.svg)](https://opensource.org/licenses/MIT)
+![GitHub Repo License: MIT](https://img.shields.io/github/license/deezyfg/alx-backend-javascript.svg)
 ![GitHub Latest commit](https://img.shields.io/github/last-commit/deezyfg/alx-backend-javascript/main?style=round-square)
 
 ## About
 
 This repository is dedicated to the **ALX Backend JavaScript** curriculum, focusing on advanced JavaScript concepts and techniques for web development. It covers:
-* **ES6 (ECMAScript 6)/ECMAScript 2015 features**
-ECMAScript 2015 is also known as ES6 and ECMAScript 6. 
+* **ES6 (ECMAScript 6)/ECMAScript 2015 features** 
 * **Promises**
 * **Classes**
 * **Data manipulation**
