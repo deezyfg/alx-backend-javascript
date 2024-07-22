@@ -6,7 +6,7 @@
 
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/deezyfg/alx-backend-javascript)
 ![GitHub Repo License: MIT](https://img.shields.io/github/license/deezyfg/alx-backend-javascript)
-![GitHub Latest commit](https://img.shields.io/github/last-commit/deezyfg/alx-backend-javascript/main?style=round-square)
+![GitHub Latest commit](https://img.shields.io/github/last-commit/deezyfg/alx-backend-javascript?style=round-square)
 
 ## About
 
