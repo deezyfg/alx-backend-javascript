@@ -755,7 +755,7 @@ Remember to run these commands from within the [0x00-ES6_basic](https://github.c
 
 ## Author
 
-**Peter Opoku-Mensah** ([@deezyfg](https://github.com/deezyfg))
+* **Peter Opoku-Mensah** ([@deezyfg](https://github.com/deezyfg))
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-20d6fe.svg?&style=plastic)](https://peter-opoku-mensah.netlify.app)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2.svg?&style=plastic&logo=twitter&logoColor=white)](https://twitter.com/coded_issue)
