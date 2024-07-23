@@ -117,14 +117,18 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * All of your functions must be exported
 
 ## Setup
+#### Prerequisites
+Ensure you have `Node.js` (version `12.11.x` or higher) and `npm` installed on your system.
+
 ### Install NodeJS 12.11.x
-(in your home directory):
+- Open your terminal and run the following commands in your home directory:
 ```
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
 ```
 
+- Verify the installation by checking the versions:
 ```
 $ nodejs -v
 v12.11.1
@@ -132,20 +136,170 @@ $ npm -v
 6.11.3
 ```
 
-### Install Jest, Babel, and ESLint
-in your project directory, install Jest, Babel and ESList by using the supplied `package.json` and run `npm install`.
+### Install and Run ESLint, Babel, and Jest
+##### Installation
+**1. In your project directory, install Jest, Babel, and ESLint by using the supplied** `package.json` **and run:**
+```bash
+npm install
+```
 
-## Configuration files
-Add the files below to your project directory
+**2. Install ESLint** (if not already included in `package.json`):
+```bash
+npm install --save-dev eslint
+```
 
-#### `package.json`
-Click here to show/hide file contents
+**3. Install Babel and related packages** (if not already included in `package.json`):
+```bash
+npm install --save-dev babel-jest @babel/core @babel/preset-env @babel/cli
+```
 
-#### `babel.config.js`
-Click here to show/hide file contents
+**4. Install Jest** (if not already included in `package.json`):
+```bash
+npm install --save-dev jest
+```
 
-#### `.eslintrc.js`
-Click here to show/hide file contents
+#####  Running the Tools
+###### ESLint:
+**1. Run ESLint to check your code for lint errors:**
+```bash
+npm run lint
+```
+This command will run **ESLint** using the local installation in **`./node_modules/.bin/eslint`.
+
+**2. Check specific files with ESLint:**
+```bash
+npm run lint <filename>
+```
+Replace `<filename>` with the actual filename you want to check.
+
+**3. Check files matching a specific pattern:**
+```bash
+npm run check-lint
+```
+
+This command will run **ESLint** on files matching the pattern `[0-9]*.js` This pattern means:
+- `[0-9]`: Any single digit from 0 to 9
+- `*`: Zero or more occurrences of the preceding element
+- `.js`: Literal characters for the file extension
+
+So, put together, [0-9]*.js means:
+"Match any file that starts with zero or more digits, followed by '.js'"
+
+For example, this pattern would match filenames like `0.js`, `42.js`, `123.js`, but not `a.js`, `test.js` since it doesn't start with a digit or `1.txt` since it doesn't ent with `.js`.
+
+###### Jest:
+**1. Run Jest to test your code:**
+```bash
+npm run test
+```
+This command will execute all your Jest test cases.
+
+**2. Run Jest on a specific file:**
+```bash
+npm run test <filename>
+```
+Replace `<filename>` with the actual filename you want to test.
+
+###### Running Both ESLint and Jest:
+**1. Run both ESLint and Jest for all files:**
+```bash
+npm run full-test
+```
+
+**2. Run both ESLint and Jest for a specific file:**
+```bash
+npm run full-test <filename>
+```
+
+These commands use the scripts defined in your `package.json` to perform linting and testing tasks efficiently. Make sure your `package.json` includes the necessary script definitions for these commands to work correctly.
+
+Configuration Files
+-------------------
+Add the following configuration files in your project root directory:
+
+### `package.json`
+
+> Click to show/hide file contents
+```
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0"
+  }
+}
+```
+
+### `babel.config.js`
+
+> Click to show/hide file contents
+```
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+```
+
+### `.eslintrc.js`
+
+> Click to show/hide file contents
+```
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
+```
 
 ### Finally…
 Don’t forget to run `npm install` from the terminal of your project folder to install all necessary project dependencies.
