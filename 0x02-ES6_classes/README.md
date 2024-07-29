@@ -3,7 +3,7 @@
 
 This project focuses on exploring the use of **classes in ES6**. It covers class creation, inheritance, and other advanced class features, including static methods and metaprogramming with symbols. Through hands-on tasks, you will learn how to define classes, add methods, and extend existing classes, providing a solid foundation for utilizing ES6 classes in real-world applications.
 
-![Meme](https://i.postimg.cc/c1BSNfzc/meme.png)
+![Meme](https://i.postimg.cc/BvkHCt2J/meme.png)
 
 Technologies & Tools :computer:
 -------------------------------
