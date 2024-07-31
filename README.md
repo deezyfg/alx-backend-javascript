@@ -8,8 +8,6 @@
 ![GitHub Repo License: MIT](https://img.shields.io/github/license/deezyfg/alx-backend-javascript)
 ![GitHub Latest commit](https://img.shields.io/github/last-commit/deezyfg/alx-backend-javascript?style=round-square)
 
----
-
 ![Banner](https://user-images.githubusercontent.com/7723544/119240806-e07f1980-bb17-11eb-8aff-2ca646af636a.gif)
 
 ## About
