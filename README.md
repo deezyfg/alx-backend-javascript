@@ -1,6 +1,6 @@
 ![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
 
-# ALX Frontend JavaScript 💥
+# ALX Backend JavaScript 💥
 
 > ES6, Promises, Classes, Data Manipulation, TypeScript, Node.js, and Unit Testing
 
