@@ -601,6 +601,86 @@ If you want to add test to validate your integration, you will need to add this 
 * Directory:` 0x05-Node_JS_basic`
 * File: `full_server/utils.js, full_server/controllers/AppController.js, full_server/controllers/StudentsController.js, full_server/routes/index.js, full_server/server.js`
 
+## Additional Information:
+
+### Using ESLint for JavaScript Code Style Checking
+
+**ESLint** is a popular tool for identifying and reporting on patterns in JavaScript code. Follow these guidelines to use it effectively:
+
+#### Checking a Specific File
+
+To run ESLint on a specific file, use the following command:
+
+```bash
+npx eslint path/to/your/file.js
+```
+
+For example, to check a file named `server.js` in the current directory, run:
+
+```
+npx eslint server.js
+```
+
+**Note:**
+
+* **ESLint** uses the configuration specified in your project's `.eslintrc` file (if present) to determine which rules to apply. If you don't have an `.eslintrc` file, ESLint uses its default rules.
+
+#### Using npm Scripts
+Alternatively, you can use the lint script defined in your `package.json`. Run it with:
+
+```
+npm run lint path/to/your/file.js
+```
+
+For example:
+
+```
+npm run lint server.js
+```
+
+#### Checking Multiple Files
+
+To check all JavaScript files in the current directory:
+
+* **Using ESLint directly:**
+
+```
+npx eslint *.js
+```
+
+* **Using the npm script:**
+```
+npm run lint *.js
+```
+
+#### Using the `check-lint` Script
+
+To check files starting with a digit, use the following command:
+
+```
+npm run check-lint
+```
+
+This checks all files matching the pattern `[0-9]*.js` in your current directory.
+
+### Fixing Issues Automatically
+To automatically fix simple issues, use the `--fix` option:
+
+```
+npx eslint --fix filename
+```
+
+This command attempts to automatically fix issues that can be safely corrected, such as missing semicolons and trailing spaces.
+
+Example:
+```
+npx eslint --fix server.js
+```
+
+**Note:**
+
+* *While automatic fixing is convenient, always review the changes to ensure they align with your intended code behavior.*
+
 ## Author
 
 - **Peter Opoku-Mensah** ([@deezyfg](https://github.com/deezyfg)) - 
